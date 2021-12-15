@@ -6,7 +6,9 @@
 кодстайл [Angular](https://angular.io/guide/styleguide), поэтому настоятельно рекомендуем внимательно ознакомиться с
 этим документом.
 
-Также рекомендуется ознакомиться с кратким списком [Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html) от Typescript. 
+Также рекомендуется ознакомиться с кратким
+списком [Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html) от
+Typescript.
 
 Ниже описаны ключевые моменты и особенности, которые не покрыты (или упомянуты вскользь) в основном кодстайле Angular.
 
@@ -152,6 +154,7 @@
     * `.validator`
     * `.guard`
     * `.model`
+    * `.collection`
 * Использование других суффиксов `<type>` НЕ ДОПУСКАЕТСЯ: если тип сущности не указан выше, то суффикс не применяется.
 
 ### 1.5. Шаблон названия папки
@@ -180,7 +183,7 @@
     * `pages` — ЖЕЛАТЕЛЬНО выделить отдельную папку для компонентов страниц
     * `pipes` — пайпы
     * `services` — сервисы
-    * `models` — классы моделей предметной области
+    * `models` — классы моделей и коллекций предметной области
     * `modules` — модули
     * `validators` — валидаторы форм
     * `utils` — утилиты (классы со статичными методами)
@@ -222,7 +225,7 @@ export enum AppProductType {
     }
     ```
 
-### 2.3. Модификатор `static`
+[comment]: <> (### 2.3. Модификатор `static`)
 
 ## 3. Сущности Angular
 
