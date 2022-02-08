@@ -1,0 +1,19 @@
+{
+  "name": "@evo/dadata",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsdoc": "*",
+    "eslint-plugin-prefer-arrow": "*",
+    "eslint-plugin-prettier": "*",
+    "prettier": "*"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+  }
+}

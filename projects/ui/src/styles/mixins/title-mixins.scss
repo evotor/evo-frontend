@@ -1,0 +1,41 @@
+@import '../variables';
+
+@mixin h1 {
+    font-size: 30px;
+    line-height: 38px;
+
+    @include media-desktop-s {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+@mixin h2 {
+    font-size: 24px;
+    line-height: 32px;
+
+    @include media-desktop-s {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+@mixin h3 {
+    font-size: 18px;
+    line-height: 26px;
+
+    @include media-desktop-s {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@mixin h4 {
+    font-size: 14px;
+    line-height: 22px;
+
+    @include media-desktop-s {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
