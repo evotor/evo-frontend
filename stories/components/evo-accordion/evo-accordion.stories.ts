@@ -11,7 +11,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 export default {
     title: 'components/evo-accordion',
     component: EvoAccordionComponent,
-    subcomponents: [EvoAccordionPanelComponent, EvoAccordionTitleComponent, EvoAccordionContentComponent],
+    subcomponents: {
+        'components/evo-accordion-panel': EvoAccordionPanelComponent,
+        'components/evo-accordion-title': EvoAccordionTitleComponent,
+        'components/evo-accordion-content': EvoAccordionContentComponent,
+    },
     decorators: [
         moduleMetadata({
             imports: [
