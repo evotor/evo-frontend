@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { EvoExpandedService } from '../../../services/evo-expanded.service';
+import {Component} from '@angular/core';
+import {EvoExpandedService} from '../../../services/evo-expanded.service';
 
 @Component({
     selector: 'evo-accordion-panel',
@@ -9,7 +9,9 @@ import { EvoExpandedService } from '../../../services/evo-expanded.service';
     providers: [EvoExpandedService],
 })
 export class EvoAccordionPanelComponent {
-    constructor(private evoExpandedService: EvoExpandedService) {
+    constructor(
+        private evoExpandedService: EvoExpandedService,
+    ) {
     }
 
     toggle() {

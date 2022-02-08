@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
-import { skipInitialRenderAnimation } from '../../animations/';
+import {ChangeDetectionStrategy, Component, HostBinding} from '@angular/core';
+import {skipInitialRenderAnimation} from '../../animations/';
 
 @Component({
     selector: 'evo-accordion',

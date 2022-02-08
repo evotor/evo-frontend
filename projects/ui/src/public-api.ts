@@ -1,1 +1,1 @@
-export * from './lib/components/evo-icon';
+export * from './lib/';

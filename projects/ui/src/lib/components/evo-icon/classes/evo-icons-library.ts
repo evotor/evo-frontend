@@ -1,5 +1,5 @@
-import { IconsCategory } from '../interfaces/icons-category';
-import { IconsSource } from '../interfaces/icons-source';
+import {IconsCategory} from '../interfaces/icons-category';
+import {IconsSource} from '../interfaces/icons-source';
 
 export class EvoIconsLibrary {
     categories: {name: string; iconsNames: string[];}[] = [];

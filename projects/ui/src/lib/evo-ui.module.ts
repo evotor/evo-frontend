@@ -1,19 +1,27 @@
-import { NgModule } from '@angular/core';
-import { EvoClickOutsideDirective, EvoIsExpandedDirective, EvoUiClassDirective } from './directives';
+import {NgModule} from '@angular/core';
+import {EvoClickOutsideDirective, EvoIsExpandedDirective, EvoUiClassDirective} from './directives';
+import {SafeHtmlPipe} from './pipes';
 
-const bundle = [
+const directives = [
     EvoClickOutsideDirective,
     EvoIsExpandedDirective,
     EvoUiClassDirective,
 ];
 
+const pipes = [
+    SafeHtmlPipe,
+]
+
 @NgModule({
     declarations: [
-        ...bundle,
+        ...directives,
+        ...pipes,
     ],
     exports: [
-        ...bundle,
+        ...directives,
+        ...pipes,
     ],
+    imports: [],
 })
 export class EvoUiModule {
 

@@ -1,8 +1,8 @@
 <svg
-    [attr.width]="svgWidth"
     [attr.height]="svgHeight"
     [attr.viewBox]="viewBox"
-    preserveAspectRatio="xMidYMid meet"
-    [innerHTML]="content"
+    [attr.width]="svgWidth"
+    [innerHTML]="content | safeHtml"
     [ngClass]="classes"
+    preserveAspectRatio="xMidYMid meet"
 ></svg>

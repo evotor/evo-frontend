@@ -1,5 +1,5 @@
-import { Component, HostListener, Input } from '@angular/core';
-import { EvoExpandedService } from '../../../services/evo-expanded.service';
+import {Component, HostListener, Input} from '@angular/core';
+import {EvoExpandedService} from '../../../services/evo-expanded.service';
 
 @Component({
     selector: 'evo-accordion-title',
@@ -10,7 +10,7 @@ export class EvoAccordionTitleComponent {
 
     @Input() label: string | undefined;
 
-    isExpanded$ = this.expandedService.isExpandedChange$;
+    readonly isExpanded$ = this.expandedService.isExpandedChange$;
 
     constructor(
         private expandedService: EvoExpandedService,
