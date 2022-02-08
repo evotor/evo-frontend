@@ -11,7 +11,7 @@ exports.removeSvgTags = (content) => {
 exports.removeHtmlAttributes = (str, attrNames) => {
     let result = str;
     attrNames.forEach(attr => {
-        const exp = new RegExp(`${attr}'=".*?"\\\\s?`, 'gm');
+        const exp = new RegExp(`${attr}="[^\"]*"\\s?`, 'gm');
         result = result.replace(exp, '');
     });
     return result;
