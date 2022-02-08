@@ -11,8 +11,10 @@
     "build:icons": "node projects/icons/scripts/build-icons.js",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook"
+    "build-storybook": "npm run docs:json && build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
+  "homepage": "https://evotor.github.io/evo-frontend",
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.2.0",
