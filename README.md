@@ -2,12 +2,12 @@
 
 ## Документация и демо
 
-* [Кодстайл](./docs/CODESTYLE.md)
+* [Кодстайл](https://evotor.github.io/evo-frontend/?page=/codestyle/)
 * [Сторибук](https://evotor.github.io/evo-frontend/)
 
 ## Библиотеки компонентов
 
-### `@evo/icons`
+### `@evo/icons``
 
 Набор монохромных SVG иконок.
 
