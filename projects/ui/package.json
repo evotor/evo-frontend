@@ -7,5 +7,6 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "gitHead": "97497138c92299f95a0000b04c73da0fd8458680"
 }
