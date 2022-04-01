@@ -1,6 +1,9 @@
 {
   "name": "@evo/ui",
   "version": "0.0.3",
+  "scripts": {
+    "build": "ng build ui"
+  },
   "peerDependencies": {
     "@angular/common": ">= 11",
     "@angular/core": ">= 11"
@@ -8,5 +11,5 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "gitHead": "97497138c92299f95a0000b04c73da0fd8458680"
+  "gitHead": "67f0af5f063fd94bedab7f0cf89038a015ecca55"
 }

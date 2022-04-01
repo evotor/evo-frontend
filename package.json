@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "prepublish": "lerna run build --since HEAD~1 --concurrency=1",
     "build:icons": "node projects/icons/scripts/build-icons.js",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
