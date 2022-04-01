@@ -24,19 +24,15 @@
     ],
     "paths": {
       "core": [
-        "dist/core/core",
         "dist/core"
       ],
       "dadata": [
-        "dist/dadata/dadata",
         "dist/dadata"
       ],
       "icons": [
-        "dist/icons/icons",
         "dist/icons"
       ],
       "ui-kit": [
-        "dist/ui/ui",
         "dist/ui"
       ]
     }
