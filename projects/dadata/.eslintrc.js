@@ -4,13 +4,12 @@ module.exports = {
         "files": ["*.ts"],
         "parser": '@typescript-eslint/parser',
         "parserOptions": {
-            "project": ["tsconfig.json"],
+            "project": ["tsconfig.lib.json"],
             "ecmaVersion": 2020,
             "sourceType": "module"
         },
         "rules": {
-            // dadata has another naming conventions
-            // naming conventions
+            // dadata has another naming conventions:
             "camelcase": "off",
             "@typescript-eslint/naming-convention": [
                 "error",
