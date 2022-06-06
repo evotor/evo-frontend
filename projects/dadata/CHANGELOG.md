@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.4...@evo/dadata@0.0.5) (2022-06-06)
+
+
+### Bug Fixes
+
+* **dadata:** add exports ([fa7d9e7](https://github.com/evotor/evo-frontend/commit/fa7d9e78bcaa42f0ac418fd84d25098d75ee3ca6))
+
+
+
+
+
 ## [0.0.4](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.3...@evo/dadata@0.0.4) (2022-04-01)
 
 **Note:** Version bump only for package @evo/dadata
