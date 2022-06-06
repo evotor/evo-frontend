@@ -6,7 +6,8 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "registry": "http://npm.market.local"
+      "registry": "http://npm.market.local",
+      "contents": "dist"
     },
     "version": {
       "allowBranch": [
