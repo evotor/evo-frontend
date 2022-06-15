@@ -1,6 +1,6 @@
 module.exports = {
   "root": true,
-  "extends": ["@evo/eslint-config-ng", "@evo/eslint-config-ng-templates", "plugin:storybook/recommended"],
+  "extends": ["@evo/eslint-config-ng", "plugin:storybook/recommended"],
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
