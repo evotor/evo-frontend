@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/evotor/evo-frontend/compare/@evo/icons@0.0.5...@evo/icons@0.0.6) (2022-06-15)
+
+
+### Features
+
+* **icons:** add icons ([3fa8a99](https://github.com/evotor/evo-frontend/commit/3fa8a9990251ad05f3a4324a84d5077d8bcff0c9))
+
+
+
+
+
 ## [0.0.5](https://github.com/evotor/evo-frontend/compare/@evo/icons@0.0.4...@evo/icons@0.0.5) (2022-06-06)
 
 **Note:** Version bump only for package @evo/icons

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.5...@evo/dadata@0.0.6) (2022-06-15)
+
+
+### Bug Fixes
+
+* **dadata:** remove redundant endpoint ([5983d17](https://github.com/evotor/evo-frontend/commit/5983d17b4d90811567b6c3bad14d0e29b8d011a2))
+
+
+
+
+
 ## [0.0.5](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.4...@evo/dadata@0.0.5) (2022-06-06)
 
 
