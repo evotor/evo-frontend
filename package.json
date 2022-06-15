@@ -48,6 +48,7 @@
     "@compodoc/compodoc": "^1.1.18",
     "@evo/eslint-config-ng": "0.0.4",
     "@evo/eslint-config-ng-templates": "latest",
+    "@evo/prettier-config": "^2.0.0",
     "@storybook/addon-actions": "^6.4.17",
     "@storybook/addon-essentials": "^6.4.17",
     "@storybook/addon-links": "^6.4.17",
