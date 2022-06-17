@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.6...@evo/dadata@0.0.7) (2022-06-17)
+
+
+### Bug Fixes
+
+* **dadata:** extend address suggestion model ([f7c5f9e](https://github.com/evotor/evo-frontend/commit/f7c5f9efe1c56fe80a1ca8ecd33032e9efbb1a77))
+
+
+
+
+
 ## [0.0.6](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.5...@evo/dadata@0.0.6) (2022-06-15)
 
 
