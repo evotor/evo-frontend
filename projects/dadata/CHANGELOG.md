@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.1.0...@evo/dadata@0.1.1) (2022-06-30)
+
+
+### Bug Fixes
+
+* **dadata:** fix company search params ([52aaffc](https://github.com/evotor/evo-frontend/commit/52aaffc92c2eb297e9ce51c151dcb5bbdea39d7f))
+
+
+
+
+
 # [0.1.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.0.7...@evo/dadata@0.1.0) (2022-06-30)
 
 
