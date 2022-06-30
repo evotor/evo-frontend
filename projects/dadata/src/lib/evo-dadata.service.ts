@@ -117,6 +117,7 @@ export class EvoDadataService {
     ): Observable<DadataSuggestionsResponse<DadataAddressSuggestion>> {
         const body = Object.assign({
             query,
+            ...(params ? params : {}),
         });
         return this.http.post<DadataSuggestionsResponse<DadataAddressSuggestion>>(
             this.getEndpoint('suggestAddress'),
