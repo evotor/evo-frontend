@@ -1,3 +1,5 @@
+export * from './dadata-address-location-geo';
+export * from './dadata-address-request-params';
 export * from './dadata-address-suggestion';
 export * from './dadata-bank-suggestion';
 export * from './dadata-company-suggestion';
