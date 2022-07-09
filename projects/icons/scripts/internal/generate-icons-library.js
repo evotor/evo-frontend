@@ -1,18 +1,14 @@
 const fs = require("fs");
 const path = require("path");
-const {SRC_PATH, DIST_PATH} = require("./config");
+const {MONOCHROME_ICONS_SRC_PATH, DIST_PATH} = require("./config");
 const {
-    removePropRec,
     removeDir,
     createDir,
     checkCyrillicChars,
     getCamelCaseString,
     removeSvgTags,
-    removeSvgMask,
     removeHtmlAttributes
 } = require("./utils.js");
-
-const {XMLParser, XMLBuilder} = require("fast-xml-parser");
 
 const fileSuffixToClean = /(_24px)?\.svg/;
 const attrsToClean = ["fill"];
@@ -30,18 +26,12 @@ exports.generateIconsLibrary = () => {
 
     // Object with unique icons names
     const uniqueIconNames = [];
-    const srcDirList = fs.readdirSync(SRC_PATH);
+    const srcDirList = fs.readdirSync(MONOCHROME_ICONS_SRC_PATH);
 
     if (!srcDirList || !srcDirList.length) {
         console.warn("Source folder is empty");
         return;
     }
-
-    // Remove dist folder
-    removeDir(path.join(DIST_PATH));
-
-    // Add dist folder
-    createDir(path.join(DIST_PATH));
 
     // Library file content
     let categoryImportsStr = "";
@@ -64,10 +54,10 @@ exports.generateIconsLibrary = () => {
     srcDirList.forEach((childDir) => {
         checkCyrillicChars(childDir);
 
-        const stat = fs.statSync(path.join(SRC_PATH, childDir));
+        const stat = fs.statSync(path.join(MONOCHROME_ICONS_SRC_PATH, childDir));
 
         if (stat.isDirectory()) {
-            const icons = fs.readdirSync(path.join(SRC_PATH, childDir));
+            const icons = fs.readdirSync(path.join(MONOCHROME_ICONS_SRC_PATH, childDir));
 
             // If directory empty
             if (!icons && !icons.length) {
@@ -75,38 +65,28 @@ exports.generateIconsLibrary = () => {
             }
 
             // Camel-case 'someCategoryName'
-            const categoryVarName = getCamelCaseString(childDir.toLowerCase().replace(/-|_|\s/, " ") + "Icons");
+            const categoryVarName = getCamelCaseString(childDir.toLowerCase().replace(/-|_|\s/ig, " ") + "Icons");
 
             // Kebab-case 'some-category-name'
-            const categoryName = childDir.toLowerCase().replace(/_|\s/, "-");
+            const categoryPath = childDir.toLowerCase().replace(/_|\s/ig, "-");
 
             const xmlOptions = {
                 ignoreAttributes: false,
                 preserveOrder: true
             };
-            const parser = new XMLParser({
-                ...xmlOptions,
-                unpairedTags: [
-                    "circle", "ellipse", "image", "line", "mesh", "path", "polygon", "polyline", "rect", "text",
-                ]
-            });
-            const builder = new XMLBuilder({
-                ...xmlOptions,
-                suppressEmptyNode: true
-            });
 
             // Add category directory
-            if (!fs.existsSync(path.join(libraryPath, categoryName))) {
-                fs.mkdirSync(path.join(libraryPath, categoryName));
+            if (!fs.existsSync(path.join(libraryPath, categoryPath))) {
+                fs.mkdirSync(path.join(libraryPath, categoryPath));
             }
 
             // Add to Library
-            categoryImportsStr += `import { ${categoryVarName} } from './${categoryName}';\n`;
+            categoryImportsStr += `import { ${categoryVarName} } from './${categoryPath}';\n`;
             categoriesList.push(categoryVarName);
 
             // Category file content
             let iconsExport = "";
-            let categoryContent = `export const ${categoryVarName} = {\n  name: '${categoryName}',\n  shapes: {\n`;
+            let categoryContent = `export const ${categoryVarName} = {\n  name: '${categoryPath}',\n  shapes: {\n`;
             icons.forEach((icon, i) => {
                 if (/^\..+/.test(icon)) {
                     return;
@@ -114,13 +94,13 @@ exports.generateIconsLibrary = () => {
 
                 checkCyrillicChars(icon);
 
-                const rawIconContent = fs.readFileSync(path.join(SRC_PATH, childDir, icon));
+                const rawIconContent = fs.readFileSync(path.join(MONOCHROME_ICONS_SRC_PATH, childDir, icon));
 
                 // Camel-case 'iconName'
                 const iconVarName = getCamelCaseString("icon " + icon.toLowerCase().replace(fileSuffixToClean, "").replace(/-|_|\s/, " "));
 
                 // Kebab-case 'icon-name'
-                const iconName = categoryName + "/" + icon.toLowerCase().replace(fileSuffixToClean, "").replace(/_|\s/, "-");
+                const iconName = icon.toLowerCase().replace(fileSuffixToClean, "").replace(/_|\s/ig, "-");
 
                 let svgContent = removeSvgTags(rawIconContent);
                 svgContent = removeHtmlAttributes(svgContent, attrsToClean);
@@ -136,7 +116,7 @@ exports.generateIconsLibrary = () => {
             categoryContent += "  }\n};\n";
 
             // Write to index.ts
-            fs.writeFileSync(path.join(libraryPath, categoryName, "index.ts"), `${iconsExport}\n${categoryContent}`);
+            fs.writeFileSync(path.join(libraryPath, categoryPath, "index.ts"), `${iconsExport}\n${categoryContent}`);
         }
 
     });
