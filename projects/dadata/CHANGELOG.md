@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.1.1...@evo/dadata@0.1.2) (2023-07-17)
+
+
+### Bug Fixes
+
+* **dadata:** update eslintrc ([ea8ac7d](https://github.com/evotor/evo-frontend/commit/ea8ac7d4e62a22817f19213d6167dcc38ef4540b))
+
+
+
+
+
 ## [0.1.1](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.1.0...@evo/dadata@0.1.1) (2022-06-30)
 
 

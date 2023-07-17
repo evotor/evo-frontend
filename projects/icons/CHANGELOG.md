@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/evotor/evo-frontend/compare/@evo/icons@0.0.6...@evo/icons@0.1.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* **icons:** remove peer dependencies ([fec0e00](https://github.com/evotor/evo-frontend/commit/fec0e001a86980718385bb0abed447997104929e))
+
+
+### Features
+
+* **icons:** add assets pics, update icons, update scripts ([ea69ec8](https://github.com/evotor/evo-frontend/commit/ea69ec8ae579654adf44574e9cbce842ddf432ff))
+
+
+
+
+
 ## [0.0.6](https://github.com/evotor/evo-frontend/compare/@evo/icons@0.0.5...@evo/icons@0.0.6) (2022-06-15)
 
 
