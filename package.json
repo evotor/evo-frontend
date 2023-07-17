@@ -46,7 +46,7 @@
     "@commitlint/config-angular": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@compodoc/compodoc": "^1.1.18",
-    "@evo/eslint-config-ng": "0.0.4",
+    "@evo/eslint-config-ng": "latest",
     "@evo/eslint-config-ng-templates": "latest",
     "@evo/prettier-config": "^2.0.0",
     "@storybook/addon-actions": "^6.4.17",

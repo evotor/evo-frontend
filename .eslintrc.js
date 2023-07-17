@@ -3,12 +3,14 @@ module.exports = {
     overrides: [
         {
             files: ['projects/**/*.ts'],
+            parser: '@typescript-eslint/parser',
             env: {
                 es6: true,
                 browser: true,
                 node: true,
             },
             parserOptions: {
+                project: ["tsconfig.lib.json"],
                 ecmaVersion: 2020,
                 sourceType: 'module',
                 createDefaultProgram: true,
