@@ -19,9 +19,9 @@ exports.removeHtmlAttributes = (str, attrNames) => {
 
 exports.getCamelCaseString = (str) => {
     return str
-        .replace(/\s(.)/g, (s) => s.toUpperCase())
-        .replace(/\s/g, '')
-        .replace(/^(.)/, (s) => s.toLowerCase());
+        .replace(/[\s-_]+/, ' ')
+        .replace(/^\w|[A-Z]|\b\w/g, (ltr, idx) => idx === 0 ? ltr.toLowerCase() : ltr.toUpperCase())
+        .replace(/\s+/g, '');
 };
 
 exports.checkCyrillicChars = (str) => {

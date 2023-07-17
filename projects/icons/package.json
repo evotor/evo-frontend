@@ -4,11 +4,7 @@
   "scripts": {
     "build": "node ./scripts/build-icons.js"
   },
-  "peerDependencies": {
-    "@angular/common": ">= 11",
-    "@angular/core": ">= 11"
-  },
-  "dependencies": {
+  "devDependencies": {
     "tslib": "^2.3.0"
   }
 }
