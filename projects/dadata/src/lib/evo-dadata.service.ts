@@ -4,16 +4,18 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {EVO_DADATA_SERVICE_ENDPOINTS} from './constants/evo-dadata-service-endpoints';
 import {EVO_DADATA_PROXY_BASE_URL} from './tokens/evo-dadata-proxy-base-url';
-import {DadataCompanySuggestion} from './interfaces/dadata-company-suggestion';
-import {DadataBankSuggestion} from './interfaces/dadata-bank-suggestion';
-import {DadataSuggestionsResponse} from './interfaces/dadata-suggestions-response';
-import {DadataAddressSuggestion} from './interfaces/dadata-address-suggestion';
-import {DadataFindCompanyByInnRequestParams} from './interfaces/dadata-find-company-by-inn-request-params';
-import {DadataFindCompanyRequestParams} from './interfaces/dadata-find-company-request-params';
-import {DadataFindBankRequestParams} from './interfaces/dadata-find-bank-request-params';
-import {EvoDadataServiceEndpoints} from './types/evo-dadata-service-endpoints';
-import {DadataCountrySuggestion} from './interfaces/dadata-country-suggestion';
-import {DadataAddressRequestParams} from './interfaces';
+import {
+    DadataAddressRequestParams,
+    DadataAddressSuggestion,
+    DadataBankSuggestion,
+    DadataCompanySuggestion,
+    DadataCountrySuggestion,
+    DadataFindBankRequestParams,
+    DadataFindCompanyByInnRequestParams,
+    DadataFindCompanyRequestParams,
+    DadataSuggestionsResponse,
+} from './interfaces';
+import {EvoDadataServiceEndpoints} from './types';
 
 @Injectable()
 export class EvoDadataService {
