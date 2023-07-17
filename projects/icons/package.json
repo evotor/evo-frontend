@@ -2,9 +2,9 @@
   "name": "@evo/icons",
   "version": "0.0.6",
   "scripts": {
-    "build": "node ./scripts/build-icons.js"
+    "build": "node ./scripts/build.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "tslib": "^2.3.0"
   }
 }
