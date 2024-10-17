@@ -2,7 +2,7 @@
 
 ## Документация и демо
 
-* [Кодстайл переехал](https://evotor.github.io/evo-frontend-docs/)
+* [Кодстайл](https://evotor.github.io/evo-frontend-docs/)
 
 ## Библиотеки компонентов
 
