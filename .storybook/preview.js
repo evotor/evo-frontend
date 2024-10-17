@@ -1,6 +1,5 @@
 import {setCompodocJson} from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
-import globalStyles from "!sass-loader!../projects/ui/src/styles/main.scss";
 
 setCompodocJson(docJson);
 
@@ -18,8 +17,3 @@ export const parameters = {
         },
     },
 }
-
-// inject global styles
-const injectedElement = document.createElement("style");
-injectedElement.innerHTML = globalStyles;
-document.body.appendChild(injectedElement);
