@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.1.1...@evo/dadata@0.2.0) (2024-10-17)
+
+
+### Bug Fixes
+
+* **dadata:** update eslintrc ([ea8ac7d](https://github.com/evotor/evo-frontend/commit/ea8ac7d4e62a22817f19213d6167dcc38ef4540b))
+
+
+### Features
+
+* **dadata:** extend company suggestion basic interface ([60df296](https://github.com/evotor/evo-frontend/commit/60df296e8e2fbe54caea727f9a108d1c3c835d39))
+
+
+### Reverts
+
+* Revert "chore(release): publish" ([80be23c](https://github.com/evotor/evo-frontend/commit/80be23c2468c7bc162990096a096930319b240db))
+
+
+
+
+
 ## [0.1.2](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.1.1...@evo/dadata@0.1.2) (2023-07-17)
 
 
