@@ -1,9 +1,10 @@
-import { DadataBankStatus } from '../enums/dadata-bank-status';
-import { DadataBankType } from '../enums/dadata-bank-type';
+import {DadataBankStatus, DadataBankType} from '../enums';
+import {DadataCompanyLocation} from "./dadata-company-location";
 
 export interface DadataFindBankRequestParams {
     count?: number;
     status?: DadataBankStatus[];
     type?: DadataBankType[];
-    locations?: {kladr_id: string}[];
+    locations: DadataCompanyLocation[];
+    locations_boost: DadataCompanyLocation[];
 }

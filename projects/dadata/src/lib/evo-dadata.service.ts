@@ -54,13 +54,11 @@ export class EvoDadataService {
     // eslint-disable-next-line max-len
     findCountryByCode(
         code: string,
-        params?: DadataFindCompanyByInnRequestParams,
     ): Observable<DadataSuggestionsResponse<DadataCompanySuggestion>> {
         const body = Object.assign(
             {
                 query: code,
             },
-            params || {},
         );
         return this.http.post<DadataSuggestionsResponse<DadataCompanySuggestion>>(
             this.getEndpoint('findPartyById'),

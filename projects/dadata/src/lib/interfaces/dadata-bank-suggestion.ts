@@ -1,7 +1,6 @@
-import { DadataBankType } from '../enums/dadata-bank-type';
-import { DadataBankStatus } from '../enums/dadata-bank-status';
-import { DadataAddressSuggestion } from './dadata-address-suggestion';
-import { DadataSuggestion } from './dadata-suggestion';
+import {DadataBankStatus, DadataBankType} from '../enums';
+import {DadataAddressSuggestion} from './dadata-address-suggestion';
+import {DadataSuggestion} from './dadata-suggestion';
 
 export interface DadataBankSuggestion {
     bic?: string;
