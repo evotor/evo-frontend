@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.2.0...@evo/dadata@0.3.0) (2024-10-25)
+
+
+### Features
+
+* **project:** extend find company req interface ([34b1653](https://github.com/evotor/evo-frontend/commit/34b1653fd2bf6b6e6b1352f819e29e856ed4cb5c))
+
+
+
+
+
 # [0.2.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.1.1...@evo/dadata@0.2.0) (2024-10-17)
 
 
