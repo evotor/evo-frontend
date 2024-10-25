@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.3.0...@evo/dadata@0.4.0) (2024-10-25)
+
+
+### Features
+
+* **project:** optimize imports and fix interfaces ([2316e2e](https://github.com/evotor/evo-frontend/commit/2316e2e0e16161a87d2b11f69c5e35ff09f51ef4))
+
+
+
+
+
 # [0.3.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.2.0...@evo/dadata@0.3.0) (2024-10-25)
 
 
