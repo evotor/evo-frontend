@@ -3,6 +3,8 @@ export type EvoDadataServiceEndpoints = {
     suggestParty: (...params: any[]) => string;
     suggestBank: (...params: any[]) => string;
     suggestCountry: (...params: any[]) => string;
+    suggestFio: (...params: any[]) => string;
+    suggestFmsUnit: (...params: any[]) => string;
     findPartyById: (...params: any[]) => string;
     findCountryById: (...params: any[]) => string;
 };

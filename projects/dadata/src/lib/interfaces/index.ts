@@ -20,3 +20,7 @@ export * from "./dadata-address-request-params";
 export * from "./dadata-find-bank-request-params";
 export * from "./dadata-find-company-request-params";
 export * from "./dadata-find-company-by-inn-request-params";
+export * from "./dadata-find-fio-request-params";
+export * from "./dadata-find-fms-unit-request-params";
+export * from "./dadata-fms-unit-filter";
+export * from "./dadata-fms-unit-suggestion";
