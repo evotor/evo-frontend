@@ -13,6 +13,10 @@ import {
     DadataFindBankRequestParams,
     DadataFindCompanyByInnRequestParams,
     DadataFindCompanyRequestParams,
+    DadataFindFioRequestParams,
+    DadataFindFmsUnitRequestParams,
+    DadataFioSuggestion,
+    DadataFmsUnitSuggestion,
     DadataSuggestionsResponse,
 } from './interfaces';
 import {EvoDadataServiceEndpoints} from './types';
@@ -136,6 +140,44 @@ export class EvoDadataService {
         });
         return this.http.post<DadataSuggestionsResponse<DadataCountrySuggestion>>(
             this.getEndpoint('suggestCountry'),
+            body,
+        );
+    }
+
+    /**
+     * FIO suggestions
+     *
+     * @see https://dadata.ru/api/suggest/name/
+     */
+    findFio(
+        query: string,
+        params?: DadataFindFioRequestParams,
+    ): Observable<DadataSuggestionsResponse<DadataFioSuggestion>> {
+        const body = {
+            query,
+            ...params,
+        };
+        return this.http.post<DadataSuggestionsResponse<DadataFioSuggestion>>(
+            this.getEndpoint('suggestFio'),
+            body,
+        );
+    }
+
+    /**
+     * FMS unit suggestions for the passport issuer field
+     *
+     * @see https://dadata.ru/api/suggest/fms_unit/
+     */
+    findFmsUnit(
+        query: string,
+        params?: DadataFindFmsUnitRequestParams,
+    ): Observable<DadataSuggestionsResponse<DadataFmsUnitSuggestion>> {
+        const body = {
+            query,
+            ...params,
+        };
+        return this.http.post<DadataSuggestionsResponse<DadataFmsUnitSuggestion>>(
+            this.getEndpoint('suggestFmsUnit'),
             body,
         );
     }

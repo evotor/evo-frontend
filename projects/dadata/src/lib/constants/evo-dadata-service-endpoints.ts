@@ -7,6 +7,8 @@ export const EVO_DADATA_SERVICE_ENDPOINTS: EvoDadataServiceEndpoints = {
     suggestParty: () => `${path}/suggest/party`,
     suggestBank: () => `${path}/suggest/bank`,
     suggestCountry: () => `${path}/suggest/country`,
+    suggestFio: () => `${path}/suggest/fio`,
+    suggestFmsUnit: () => `${path}/suggest/fms_unit`,
     findPartyById: () => `${path}/findById/party`,
     findCountryById: () => `${path}/findById/country`,
 };
