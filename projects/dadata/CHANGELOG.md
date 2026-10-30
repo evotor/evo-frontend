@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.4.0...@evo/dadata@0.5.0) (2026-10-30)
+
+
+### Features
+
+* **project:** add find fio and find fms unit in dadata service ([9151254](https://github.com/evotor/evo-frontend/commit/9151254dfe151086ad5a6bb2ab3bc85ef34cf9aa))
+
+
+
+
+
 # [0.4.0](https://github.com/evotor/evo-frontend/compare/@evo/dadata@0.3.0...@evo/dadata@0.4.0) (2024-10-25)
 
 
